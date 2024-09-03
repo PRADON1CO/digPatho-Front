@@ -8,19 +8,24 @@ import Inicio from './components/pages/Inicio';
 import Login from './components/pages/Login';
 import Contacto from './components/pages/Contacto';
 import CancerDeMama from './components/pages/CancerDeMama';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
  
 
   return (
     <>
+      <BrowserRouter>
       <Menu></Menu>
-      {/* <Error404></Error404> */}
-      {/* <Inicio></Inicio> */}
-      {/* <Login></Login> */}
-      {/* <Contacto></Contacto> */}
-      <CancerDeMama></CancerDeMama>
+      <Routes>
+      <Route path='/' element={<Inicio></Inicio>}></Route>
+      <Route path='/login' element={<Login></Login>}></Route>
+      <Route path='/contacto' element={<Contacto></Contacto>}></Route>
+      <Route path='/cancerdemama' element={<CancerDeMama></CancerDeMama>}></Route>
+      <Route path='*' element={<Error404></Error404>}></Route>
+      </Routes>
       <Footer></Footer>
+      </BrowserRouter>
     </>
   )
 }
