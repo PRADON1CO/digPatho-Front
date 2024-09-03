@@ -1,6 +1,7 @@
 .colorMorado:hover {
   color: #ba68c8 !important;
   font-weight: 520;
+  border: solid 3px !important;
 }
 
 .sombraBotones {

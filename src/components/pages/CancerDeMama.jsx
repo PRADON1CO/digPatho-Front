@@ -2,6 +2,7 @@ import { Col, Container, Form, Row, Button } from "react-bootstrap";
 import "../../style/cancerDeMama.css";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
+import { NavLink } from "react-router-dom";
 
 const CancerDeMama = () => {
   const {
@@ -19,18 +20,18 @@ const CancerDeMama = () => {
   return (
     <div className="container-fluid pt-4 mainSection bg-body-secondary">
       <div className="pt-2">
-        <a className="bg-body-secondary btn rounded-0 sombraBotones colorMorado p-2 border-1 me-1">
+        <NavLink className="bg-body-secondary btn rounded-0 sombraBotones colorMorado p-2 border-1 me-1">
           K167
-        </a>
-        <a className="bg-body-secondary btn rounded-0 sombraBotones colorMorado p-2 border-1 mx-1">
+        </NavLink>
+        <NavLink to={'*'} className="bg-body-secondary btn rounded-0 sombraBotones colorMorado p-2 border-1 mx-1">
           HER2
-        </a>
-        <a className="bg-body-secondary btn rounded-0 sombraBotones colorMorado p-2 border-1 mx-1">
+        </NavLink>
+        <NavLink to={'*'} className="bg-body-secondary btn rounded-0 sombraBotones colorMorado p-2 border-1 mx-1">
           Estrógeno
-        </a>
-        <a className="bg-body-secondary btn rounded-0 sombraBotones colorMorado p-2 border-1 mx-1">
+        </NavLink>
+        <NavLink to={'*'} className="bg-body-secondary btn rounded-0 sombraBotones colorMorado p-2 border-1 mx-1">
           Progestona
-        </a>
+        </NavLink>
       </div>
       <div className="px-4 py-4 mb-3 bg-body-secondary sombraContenedores">
         <div className="text-center d-flex flex-column bg-white sombraContenedores">
