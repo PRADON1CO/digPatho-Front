@@ -43,8 +43,10 @@ const CancerDeMama = () => {
         </div>
         <Container>
           <Row>
-            <Col xs={12} md={6} lg={6}>
-              <div className="bg-dark w-50 text-center">p</div>
+            <Col xs={12} md={6} lg={6} className="d-flex align-items-center justify-content-center">
+              <div className=" w-50 mx-auto py-3 text-center">
+                <img src="https://images.pexels.com/photos/3992943/pexels-photo-3992943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" width={200} alt="" />
+              </div>
             </Col>
             <Col xs={12} md={6} lg={6}>
               <Form onSubmit={handleSubmit(onSubmit)} className="py-3">
