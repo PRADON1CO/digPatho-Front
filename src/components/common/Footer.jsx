@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import logo from"../../assets/logo.png"
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -11,98 +12,98 @@ const Footer = () => {
       >
         <Row>
           <Col md={12} lg={3} className="text-center">
-            <a to={"/"}>
+            <NavLink  to={"/"}>
               <img src={logo} alt="Logo FitFactory" width="190px" />
-            </a>
+            </NavLink>
           </Col>
           <Col className="d-none d-md-block text-white">
             <h4 className="text-white">Opciones</h4>
-            <a
+            <NavLink 
               className="text-decoration-none tamanioOpcionesMenu text-white"
               to="/"
             >
               <p>Inicio</p>
-            </a>
-            <a
+            </NavLink>
+            <NavLink 
               className="text-decoration-none tamanioOpcionesMenu text-white"
               to="/contacto"
             >
               <p>Contacto</p>
-            </a>
-            <a
+            </NavLink>
+            <NavLink 
               className="text-decoration-none tamanioOpcionesMenu text-white"
-              to="/nosotros"
+              to="https://www.digpatho.com/es"
             >
               <p>Nosotros</p>
-            </a>
-            <a
+            </NavLink>
+            <NavLink 
               className="text-decoration-none tamanioOpcionesMenu text-white"
               to="/login"
             >
               <p>Login</p>
-            </a>
+            </NavLink>
           </Col>
           <Col xs={12} md={4} lg={3} className="">
             <h4 className="text-white">Información</h4>
-            <a
+            <NavLink 
               className="text-decoration-none tamanioOpcionesMenu text-white"
               to="*"
             >
               <p>Políticas de privacidad</p>
-            </a>
-            <a
+            </NavLink>
+            <NavLink 
               className="text-decoration-none tamanioOpcionesMenu text-white"
               to="*"
             >
               <p>Legal</p>
-            </a>
-            <a
+            </NavLink>
+            <NavLink 
               className="text-decoration-none tamanioOpcionesMenu text-white"
               to="*"
             >
               <p>Promociones</p>
-            </a>
-            <a
+            </NavLink>
+            <NavLink 
               className="text-decoration-none tamanioOpcionesMenu text-white"
               to="*"
             >
               <p>Horarios de atención</p>
-            </a>
+            </NavLink>
           </Col>
           <Col xs={12} md={4} lg={3} className="">
             <h4 className="text-white">Contacto</h4>
-            <a
+            <NavLink 
               to={"*"}
               className="text-decoration-none text-white tamanioOpcionesMenu"
             >
               <p>
                 <i className="bi bi-whatsapp"></i> +52 1 55 3974 1845
               </p>
-            </a>
-            <a
+            </NavLink>
+            <NavLink 
               to={"*"}
               className="text-white tamanioOpcionesMenu text-decoration-none"
             >
               <p>
                 <i className="bi bi-instagram"></i> DigPatho
               </p>
-            </a>
-            <a
+            </NavLink>
+            <NavLink 
               to={"*"}
               className="text-white tamanioOpcionesMenu text-decoration-none"
             >
               <p>
                 <i className="bi bi-facebook"></i> DigPatho
               </p>
-            </a>
-            <a
+            </NavLink>
+            <NavLink 
               to={"*"}
               className="text-white tamanioOpcionesMenu text-decoration-none"
             >
               <p>
                 <i className="bi bi-geo-alt-fill"></i> Cordoba
               </p>
-            </a>
+            </NavLink>
           </Col>
         </Row>
       </Container>
