@@ -7,6 +7,7 @@ import Footer from './components/common/Footer';
 import Inicio from './components/pages/Inicio';
 import Login from './components/pages/Login';
 import Contacto from './components/pages/Contacto';
+import CancerDeMama from './components/pages/CancerDeMama';
 
 function App() {
  
@@ -17,7 +18,8 @@ function App() {
       {/* <Error404></Error404> */}
       {/* <Inicio></Inicio> */}
       {/* <Login></Login> */}
-      <Contacto></Contacto>
+      {/* <Contacto></Contacto> */}
+      <CancerDeMama></CancerDeMama>
       <Footer></Footer>
     </>
   )
