@@ -5,3 +5,14 @@
 .tamanioTextLogo{
     font-size: 10px;
 }
+
+.tamanioOpcionesMenu{
+    font-weight: 500;
+  }
+  
+  
+.tamanioOpcionesMenu:hover{
+    color: #BA68C8 !important;
+    font-weight: 650;
+  }
+  
