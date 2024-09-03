@@ -1,0 +1,37 @@
+.bannerContacto{
+    background-image: url('../assets/contacto.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    filter: brightness(94%);
+}
+
+.tamanioIconos{
+    font-size: 23px;
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: #BA68C8;
+}
+  
+.swal2-styled.swal2-confirm:hover {
+    background-color: #BA68C8;
+}
+
+@media (min-width: 992px){
+    .bannerContacto{
+        height: 700px;
+        background-position: bottom;
+    }
+    .banner{
+        background-position: bottom;
+        height: 650px;
+    }
+}
+

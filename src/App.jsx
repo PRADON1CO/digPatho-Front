@@ -6,6 +6,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import Footer from './components/common/Footer';
 import Inicio from './components/pages/Inicio';
 import Login from './components/pages/Login';
+import Contacto from './components/pages/Contacto';
 
 function App() {
  
@@ -15,7 +16,8 @@ function App() {
       <Menu></Menu>
       {/* <Error404></Error404> */}
       {/* <Inicio></Inicio> */}
-      <Login></Login>
+      {/* <Login></Login> */}
+      <Contacto></Contacto>
       <Footer></Footer>
     </>
   )

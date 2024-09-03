@@ -15,3 +15,7 @@
 .color{
   color: #BA68C8;
 }
+
+.bgMorado{
+  background-color: #BA68C8 !important;
+}
