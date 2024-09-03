@@ -2,6 +2,7 @@ import { Card, Container, Form, Row, Col, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import login from "../../assets/login.png";
 import "../../style/login.css"
+import { NavLink } from "react-router-dom";
 
 const Login = () => {
   const {
@@ -88,9 +89,9 @@ const Login = () => {
                       {errors.password?.message}
                     </Form.Text>
                   </Form.Group>
-                  <div>
+                  <NavLink to={'*'} className="nav-link">
                     <p className="text-underline fw-medium btnEnviar">Crear Cuenta</p>
-                  </div>
+                  </NavLink>
                   <div className="d-flex justify-content-center">
                     <Button
                       className="bg-dark rounded-0 border-0 btnEnviar px-4"
