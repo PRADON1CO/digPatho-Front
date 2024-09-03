@@ -33,3 +33,12 @@
     position: relative;
     z-index: 2;
 }
+ .tamanioText{
+    font-size: 19px;
+ }
+
+ @media (min-width: 767px){
+    .tamanioText{
+        font-size: 21px;
+     }
+ }

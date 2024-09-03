@@ -11,3 +11,7 @@
 .mainSection{
   flex-grow: 1;
 }
+
+.color{
+  color: #BA68C8;
+}
