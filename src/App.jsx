@@ -11,18 +11,28 @@ import CancerDeMama from "./components/pages/CancerDeMama";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import RutasProtegidas from "./components/routes/RutasProtegidas";
 import ListaRoutasAdmin from "./components/routes/ListaRoutasAdmin";
+import { useState } from "react";
 
 function App() {
+  const usuario = JSON.parse(sessionStorage.getItem("usuariodigpatho")) || {};
+  const [usuarioLogueado, setUsuarioLogueado] = useState(usuario);
+
   return (
     <>
       <BrowserRouter>
-        <Menu></Menu>
+        <Menu
+          usuarioLogueado={usuarioLogueado}
+          setUsuarioLogueado={setUsuarioLogueado}
+        ></Menu>
         <Routes>
           <Route path="/" element={<Inicio></Inicio>}></Route>
-          <Route path="/login" element={<Login></Login>}></Route>
+          <Route
+            path="/login"
+            element={<Login setUsuarioLogueado={setUsuarioLogueado}></Login>}
+          ></Route>
           <Route path="/contacto" element={<Contacto></Contacto>}></Route>
           <Route
-            path="/administrador"
+            path="/administrador/*"
             element={
               <RutasProtegidas>
                 <ListaRoutasAdmin></ListaRoutasAdmin>

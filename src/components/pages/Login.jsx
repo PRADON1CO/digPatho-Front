@@ -1,19 +1,39 @@
 import { Card, Container, Form, Row, Col, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import login from "../../assets/login.png";
+import loginImg from "../../assets/login.png";
 import "../../style/login.css"
-import { NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
+import { login } from"../helpers/queries"
 
-const Login = () => {
+
+const Login = ({setUsuarioLogueado}) => {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = async (usuario) => {
-    console.log(usuario);
-  };
+  const navegacion = useNavigate();
+
+  const onSubmit = (usuario) => {
+    console.log(usuario)
+    if (login(usuario)) {
+      Swal.fire({
+        title: "  Usuario logueado",
+        text: "Bienvenido a Fit Factory",
+        icon: "success",
+      });
+      setUsuarioLogueado(usuario.email);
+      navegacion("/administrador/cancerDeMama");
+    } else {
+      Swal.fire({
+        title: "Error en el login",
+        text: "Email o contraseña incorrecta",
+        icon: "error",
+      });
+    }
+  }
 
   return (
     <div className="login-background">
@@ -23,7 +43,7 @@ const Login = () => {
             <Card className="p-3 shadow">
               <Card.Body>
                 <Card.Title className="text-center mb-4">
-                  <img src={login} alt="" className="imgLogin" />
+                  <img src={loginImg} alt="" className="imgLogin" />
                 </Card.Title>
                 <Form
                   onSubmit={handleSubmit(onSubmit)}
