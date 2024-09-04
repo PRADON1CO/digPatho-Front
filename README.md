@@ -6,7 +6,7 @@ Este proyecto es una aplicación web sobre un Centro de Pathología.
     </a>
     <h1>Fit Factory</h1>
     <p>
-    Fit Factory es el principal referente en Argentina en el ámbito del fitness. Se destaca por ofrecer las más destacadas ofertas y descuentos en un amplio catálogo de servicios y equipamiento de última generación.
+    Somos una startup de Inteligencia Artificial e imágenes para Medicina. Nuestro objetivo es detectar cáncer de la manera más rápida y eficiente, así como disminuir la carga de trabajo de los patólogos e invadir a los pacientes en menor medida. El proyecto busca ser tan abierto como una universidad y tan sofisticado como un negocio health-tech.
     <br>
     <a href='https://digpatho.netlify.app/'>
     <strong>Explorar pagina » </strong>
