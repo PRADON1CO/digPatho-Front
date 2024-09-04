@@ -70,7 +70,7 @@ La aplicación está desplegada en Netlify. Puedes acceder haciendo clic en el s
 
 ## Repositorio Backend
 
-* #### Repositorio Backend: [backendDigPatho]( Repositorio Backend: [backendProyectoFinal]())
+* #### Repositorio Backend: [backendDigPatho]( Repositorio Backend: [backendProyectoFinal](https://github.com/PRADON1CO/digPatho-Backend))
 
 ## Tecnologías utilizadas
 
@@ -111,6 +111,8 @@ La aplicación está desplegada en Netlify. Puedes acceder haciendo clic en el s
 
   * npm install o npm i
 
+4. Crear un archivo .env y agregar la variable:
+  *VITE_API_USUARIO= url
 
 ## Autores
 
