@@ -21,7 +21,7 @@ const Login = ({setUsuarioLogueado}) => {
     if (login(usuario)) {
       Swal.fire({
         title: "  Usuario logueado",
-        text: "Bienvenido a Fit Factory",
+        text: "Bienvenido a Dig pato",
         icon: "success",
       });
       setUsuarioLogueado(usuario.email);
