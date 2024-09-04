@@ -43,7 +43,7 @@ const Menu = ({ usuarioLogueado, setUsuarioLogueado }) => {
             >
               Contacto
             </NavLink>
-            {usuarioLogueado.length > 0 ? (
+            {usuarioLogueado.email ? (
               <>
                 <NavLink to="/administrador/cancerDeMama" className="text-white tamanioOpcionesMenu nav-link">
                   Cáncer de Mama

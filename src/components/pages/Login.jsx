@@ -16,24 +16,57 @@ const Login = ({setUsuarioLogueado}) => {
 
   const navegacion = useNavigate();
 
-  const onSubmit = (usuario) => {
-    console.log(usuario)
-    if (login(usuario)) {
-      Swal.fire({
-        title: "  Usuario logueado",
-        text: "Bienvenido a Dig pato",
-        icon: "success",
-      });
-      setUsuarioLogueado(usuario.email);
-      navegacion("/administrador/cancerDeMama");
-    } else {
-      Swal.fire({
-        title: "Error en el login",
-        text: "Email o contraseña incorrecta",
-        icon: "error",
-      });
+  // const onSubmit = (usuario) => {
+  //   console.log(usuario)
+  //   if (login(usuario)) {
+  //     Swal.fire({
+  //       title: "  Usuario logueado",
+  //       text: "Bienvenido a Dig pato",
+  //       icon: "success",
+  //     });
+  //     setUsuarioLogueado(usuario.email);
+  //     navegacion("/administrador/cancerDeMama");
+  //   } else {
+  //     Swal.fire({
+  //       title: "Error en el login",
+  //       text: "Email o contraseña incorrecta",
+  //       icon: "error",
+  //     });
+  //   }
+  // }
+
+  const onSubmit = async (usuario) => {
+    const respuesta = await login(usuario);
+    try {
+      if (respuesta.status === 200) {
+        Swal.fire(
+          "¡Bienvenido!",
+          "Has iniciado sesión correctamente",
+          "success"
+        );
+        const datos = await respuesta.json();
+        sessionStorage.setItem(
+          "usuariodigpatho",
+          JSON.stringify({ email: datos.email, token: datos.token })
+        );
+         
+        setUsuarioLogueado(datos);
+        navegacion("/administrador/cancerDeMama");
+      } else {
+        Swal.fire(
+          "Ocurrió un error",
+          "Correo o contraseña incorrectos",
+          "error"
+        );
+      }
+    } catch (error) {
+      Swal.fire(
+        "Ocurrió un error",
+        "Error procesando la respuesta del servidor",
+        "error"
+      );
     }
-  }
+  };
 
   return (
     <div className="login-background">
