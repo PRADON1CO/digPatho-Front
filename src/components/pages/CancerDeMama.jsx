@@ -106,7 +106,7 @@ const CancerDeMama = () => {
               <Form onSubmit={handleSubmit(onSubmit)} className="py-3">
                   <Form.Group as={Row} className="mb-3">
                     <Form.Label className="fw-medium" column sm={4}>
-                      IA K167
+                      IA K167:
                     </Form.Label>
                     <Col sm={8}>
                       <Form.Control
@@ -136,7 +136,7 @@ const CancerDeMama = () => {
                   </Form.Group>
                   <Form.Group as={Row} className="mb-3">
                     <Form.Label className="fw-medium" column sm={4}>
-                      IA Total Cells
+                      IA Total Cells:
                     </Form.Label>
                     <Col sm={8}>
                       <Form.Control
@@ -226,7 +226,7 @@ const CancerDeMama = () => {
                   </Form.Group>
                   <Form.Group as={Row} className="mb-3">
                     <Form.Label className="fw-medium" column sm={4}>
-                      K167
+                      K167:
                     </Form.Label>
                     <Col sm={8}>
                       <Form.Control
@@ -406,7 +406,7 @@ const CancerDeMama = () => {
                   </Form.Group>
                   <Form.Group as={Row} className="mb-3">
                     <Form.Label className="fw-medium" column sm={4}>
-                      Wrong Positive Cells
+                      Wrong Positive Cells:
                     </Form.Label>
                     <Col sm={8}>
                       <Form.Control
@@ -436,7 +436,7 @@ const CancerDeMama = () => {
                   </Form.Group>
                   <Form.Group as={Row} className="mb-3">
                     <Form.Label className="fw-medium" column sm={4}>
-                      Wrong Negative Cells
+                      Wrong Negative Cells:
                     </Form.Label>
                     <Col sm={8}>
                       <Form.Control
