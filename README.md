@@ -70,7 +70,7 @@ La aplicación está desplegada en Netlify. Puedes acceder haciendo clic en el s
 
 ## Repositorio Backend
 
-* #### Repositorio Backend: [backendProyectoFinal]( Repositorio Backend: [backendProyectoFinal](https://github.com/PRADON1CO/ProyectoFinalBackend/tree/main))
+* #### Repositorio Backend: [backendDigPatho]( Repositorio Backend: [backendProyectoFinal]())
 
 ## Tecnologías utilizadas
 
@@ -101,7 +101,7 @@ La aplicación está desplegada en Netlify. Puedes acceder haciendo clic en el s
 
 1. Clona este repositorio en tu máquina local a través de una terminal:
 
-  * git clone <[url-del-repositorio](https://github.com/PRADON1CO/ProyectoFinalRC-Front.git)>
+  * git clone <[url-del-repositorio](https://github.com/PRADON1CO/digPatho-Front)>
 
 2. Navega al directorio del proyecto:
 
@@ -128,7 +128,7 @@ _Prado brian Nicolas_
 
 ## Licencia
 
-codigo y documentacion copyright 2023-2024 de los autores de Fit Factory
+codigo y documentacion copyright 2023-2024 de los autores de Dig Patho
 
 
 
