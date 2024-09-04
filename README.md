@@ -29,7 +29,7 @@ Este proyecto es una aplicación web sobre un Centro de Pathología.
 
 ## Aplicación Web con React y Vite
 
-Esta aplicación realizada en forma grupal corresponde al Proyecto Final del curso Desarrollador Full Stack dictado por RollingCodeSchool.
+Esta aplicación realizada en forma individual para el test para la bacanque de desarrollo en digPatho .
 
 ## Enunciado - Requerimientos
 
