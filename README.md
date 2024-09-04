@@ -4,7 +4,7 @@ Este proyecto es una aplicación web sobre un Centro de Pathología.
     <a href='https://digpatho.netlify.app/'>
     <img src='./src//assets/logo.png' alt='Dig Patho' width='300' />
     </a>
-    <h1>Fit Factory</h1>
+    <h1>Dig Patho</h1>
     <p>
     Somos una startup de Inteligencia Artificial e imágenes para Medicina. Nuestro objetivo es detectar cáncer de la manera más rápida y eficiente, así como disminuir la carga de trabajo de los patólogos e invadir a los pacientes en menor medida. El proyecto busca ser tan abierto como una universidad y tan sofisticado como un negocio health-tech.
     <br>
